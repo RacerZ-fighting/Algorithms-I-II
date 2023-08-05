@@ -117,11 +117,12 @@ public class KdTree {
             return;
         }
 
-        if (parent == null) {
+        /*if (parent == null) {
             StdDraw.setPenColor(StdDraw.RED);
             StdDraw.setPenRadius();
             StdDraw.line(node.p.x(), 0, node.p.x(), 1);
-        } else if (node.sp == SEPARATOR.VERTICAL) {
+        } else */
+        if (node.sp == SEPARATOR.VERTICAL) {
             StdDraw.setPenColor(StdDraw.RED);
             StdDraw.setPenRadius();
             StdDraw.line(node.p.x(), node.rect.ymin(), node.p.x(), node.rect.ymax());
